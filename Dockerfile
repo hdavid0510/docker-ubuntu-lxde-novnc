@@ -1,4 +1,4 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc:latest
+FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
 
 WORKDIR /usr/local/share/doro-lxde-wallpapers
 RUN rm bg[2-4].jpg \
