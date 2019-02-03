@@ -67,7 +67,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Ubuntu</name>
-      <size>10</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -76,7 +76,7 @@
     </font>
     <font place="MenuHeader">
       <name>Ubuntu</name>
-      <size>9</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +85,7 @@
     </font>
     <font place="MenuItem">
       <name>Ubuntu</name>
-      <size>9</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,7 +94,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Ubuntu Medium</name>
-      <size>9</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,7 +103,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Ubuntu Medium</name>
-      <size>9</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
