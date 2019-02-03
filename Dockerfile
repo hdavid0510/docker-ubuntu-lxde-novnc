@@ -1,4 +1,4 @@
-FROM:dorowu/ubuntu-desktop-lxde-vnc:latest
+FROM dorowu/ubuntu-desktop-lxde-vnc:latest
 
 WORKDIR /usr/local/share/doro-lxde-wallpapers
 RUN rm bg[2-4].jpg \
@@ -23,4 +23,4 @@ RUN sed -i 's/http:\/\/archive/http:\/\/kr.archive/g' /etc/apt/sources.list \
 	&& apt update -q \
 	&& apt upgrade -y -q \
 	&& apt install -y --no-install-recommends -q\
-		apt-utils nano obconf lxappearance-obconf bash-completion wget ultra-flat-icons libreoffice code
+		apt-utils nano obconf lxappearance-obconf bash-completion wget ultra-flat-icons libreoffice code lxtask
