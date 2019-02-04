@@ -20,5 +20,5 @@ RUN apt update -q \
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \
 	&& sed -i "s/UI.initSetting('resize', 'off');/UI.initSetting('resize', 'scale');/g" /usr/local/lib/web/frontend/static/novnc/app/ui.js \
 	&& git clone https://github.com/hdavid0510/docker-ubuntu-vnc-desktop /confs \
-	&& rsync -a -v /confs/files/ \
+	&& rsync -arvhI /confs/files/ \
 	&& rm -rf /confs
