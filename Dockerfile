@@ -14,7 +14,7 @@ RUN apt update -q \
 	&& apt update -q \
 	&& apt upgrade -y -q \
 	&& apt install -y --no-install-recommends -q\
-		apt-utils nano obconf lxappearance-obconf bash-completion wget ultra-flat-icons libreoffice code lxtask openssh-server git rsync
+		apt-utils nano obconf lxappearance-obconf bash-completion wget code lxtask openssh-server git rsync
 
 # Customizations : remove unused, change settings, copy conf files
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \
