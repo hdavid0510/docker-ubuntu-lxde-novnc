@@ -3,7 +3,8 @@ FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
 WORKDIR /
 
 # Install required / Upgrade installed packages
-RUN apt-get update -qq \
+RUN rm -rf /etc/apt/sources.list.d/fcwu-tw-ubuntu-apps-bionic.list*
+	&& apt-get update -qq \
 	&& apt-get autoremove -y -qq \
 	&& add-apt-repository -y ppa:noobslab/icons \
 	&& curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
