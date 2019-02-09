@@ -4,7 +4,6 @@ WORKDIR /
 
 # Install required / Upgrade installed packages
 RUN apt update -q \
-	&& apt purge -y -q fonts-wqy-zenhei \
 	&& apt autoremove -y \
 	&& add-apt-repository -y ppa:noobslab/icons \
 	&& curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
@@ -13,8 +12,11 @@ RUN apt update -q \
 	&& rm -f microsoft.gpg \
 	&& apt update -q \
 	&& apt upgrade -y -q \
+	&& apt install -y --no-install-recommends -qq apt-utils \
 	&& apt install -y --no-install-recommends -q\
-		apt-utils nano obconf lxappearance-obconf bash-completion wget code lxtask openssh-server git rsync
+		nano bash-completion wget code lxtask openssh-server git \
+		ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
+	&& apt purge -y -qq fonts-wqy-zenhei fonts-dejavu* \
 
 # Customizations : remove unused, change settings, copy conf files
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \

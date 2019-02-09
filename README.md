@@ -1,6 +1,7 @@
 # docker-ubuntu-lxde-novnc
-[![Docker Pulls](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc/) 
-Customized noVNC LXDE ubuntu desktop docker on top of https://github.com/fcwu/docker-ubuntu-vnc-desktop
+[![](https://images.microbadger.com/badges/version/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc)
+[![](https://images.microbadger.com/badges/image/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc)  
+Customized noVNC LXDE ubuntu desktop docker on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
 
 ## Option: FASTBOOT
-Declaring environment variable FASTBOOT enables docker image load faster, by skipping chmod-ing $HOME directory on docker start. This is useful when you want to link volume under $HOME.
+Declaring environment variable FASTBOOT enables docker image load faster. This is useful when you want to link volume under `$HOME`, which contains lots of files and directories. Since this skips `chown`-ing every files and directories under `$HOME` on docker start, this might cause those files or directories unreadable or unwritable. Using this option at your own risk.
