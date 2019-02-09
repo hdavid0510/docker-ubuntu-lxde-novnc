@@ -16,7 +16,7 @@ RUN apt-get update -qq \
 	&& apt-get install -y --no-install-recommends -qq\
 		nano bash-completion wget code lxtask openssh-server git \
 		ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
-	&& apt-get-get purge -y -qq fonts-wqy-zenhei fonts-dejavu* \
+	&& apt-get purge -y -qq fonts-wqy-zenhei fonts-dejavu* \
 	&& apt-get autoclean
 
 # Customizations : remove unused, change settings, copy conf files
