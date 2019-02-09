@@ -1,6 +1,8 @@
 # docker-ubuntu-lxde-novnc
-[![](https://images.microbadger.com/badges/version/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc)
-[![](https://images.microbadger.com/badges/image/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc)  
+[![](https://images.microbadger.com/badges/version/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:latest)
+[![](https://images.microbadger.com/badges/image/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:latest)  
+[![](https://images.microbadger.com/badges/image/hdavid0510/ubuntu-desktop-lxde-vnc:version-0.5.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:version-0.5)
+[![](https://images.microbadger.com/badges/version/hdavid0510/ubuntu-desktop-lxde-vnc:version-0.5.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:version-0.5)  
 Customized noVNC LXDE ubuntu desktop docker on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
 
 ## Option: FASTBOOT

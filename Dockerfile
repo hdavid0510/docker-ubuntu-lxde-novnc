@@ -1,4 +1,5 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
+LABEL maintainer="gdavid0510@gmail.com"
 
 WORKDIR /
 
