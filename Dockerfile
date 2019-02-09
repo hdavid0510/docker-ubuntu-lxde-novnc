@@ -17,6 +17,7 @@ RUN apt update -qq \
 		nano bash-completion wget code lxtask openssh-server git \
 		ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
 	&& apt purge -y -qq fonts-wqy-zenhei fonts-dejavu* \
+	&& apt autoclean
 
 # Customizations : remove unused, change settings, copy conf files
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \
