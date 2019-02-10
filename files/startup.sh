@@ -9,7 +9,7 @@ if [ -n "$VNC_PASSWORD" ]; then
 fi
 
 if [ -n "$RESOLUTION" ]; then
-	sed -i "s/1024x768/$RESOLUTION/" /usr/local/bin/xvfb.sh
+	sed -i -r "s/\-screen 0 (.*)x16$/\-screen 0 ${RESOLUTION}x16/g" /usr/local/bin/xvfb.sh
 fi
 
 USER=${USER:-root}
