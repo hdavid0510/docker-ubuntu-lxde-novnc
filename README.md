@@ -6,4 +6,4 @@
 Customized noVNC LXDE ubuntu desktop docker on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
 
 ## Option: FASTBOOT
-Declaring environment variable FASTBOOT enables docker image load faster. This is useful when you want to link volume under `$HOME`, which contains lots of files and directories. Since this skips `chown`-ing every files and directories under `$HOME` on docker start, this might cause those files or directories unreadable or unwritable. Using this option at your own risk.
+Declaring environment variable `FASTBOOT` with value `true` enables docker image load faster. This is useful when you want to link volume under `$HOME`, which contains lots of files and directories. Since this skips `chown`-ing every files and directories under `$HOME` on docker start, this might cause those files or directories unreadable or unwritable. Using this option at your own risk.
