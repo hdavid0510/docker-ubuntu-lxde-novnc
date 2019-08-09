@@ -6,7 +6,7 @@ RUN 	rm -rf /etc/apt/sources.list.d/fcwu-tw-ubuntu-apps-bionic.list* \
 	&&	sed -i 's/tw.//g' /etc/apt/sources.list \
 	&&	apt-get update -qq \
 	&&	apt-get install -y --no-install-recommends -qq apt-utils \
-	&&	apt-get purge -y -qq fonts-wqy-zenhei fonts-dejavu* \
+	&&	apt-get purge -y -qq fonts-wqy-zenhei \
 	&&	apt-get autoremove -y -qq \
 	&&	apt-get upgrade -y -qq
 
