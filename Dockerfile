@@ -29,7 +29,7 @@ RUN 	apt-get install -y -qq apt-fast \
 RUN mkdir -p /tmp/opensnap
 WORKDIR /tmp/opensnap
 RUN 	git clone https://github.com/lawl/opensnap.git /tmp/opensnap
-RUN		apt install build-essential libx11-dev libgtk-3-dev wmctrl -y -qq \
+RUN		apt install build-essential libx11-dev libgtk-3-dev wmctrl -y -qq
 RUN		make \
 	&&	make install \
 	&&	cd / \
