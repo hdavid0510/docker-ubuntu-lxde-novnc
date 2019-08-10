@@ -122,7 +122,7 @@ alias gss='git status --short'
 #alias gsts='git stash save'
 
 # aliases #########
-EB_START_LINE=97
+EB_START_LINE=130
 alias eb="nano +$EB_START_LINE ~/.bashrc ; source ~/.bashrc; echo '.bashrc updated and applied!'"
 alias vb="vi +$EB_START_LINE ~/.bashrc ; source ~/.bashrc; echo '.bashrc updated and applied!'"
 alias CAPS="xdotool key Caps_Lock"
