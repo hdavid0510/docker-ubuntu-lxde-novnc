@@ -38,3 +38,6 @@ RUN		make \
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \
 	&&	sed -i "s/UI.initSetting('resize', 'off');/UI.initSetting('resize', 'scale');/g" /usr/local/lib/web/frontend/static/novnc/app/ui.js
 COPY files /
+
+# SSHD run bugfix
+RUN mkdir -p /run/sshd

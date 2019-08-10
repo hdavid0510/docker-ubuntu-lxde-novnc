@@ -62,5 +62,4 @@ chmod +x /usr/local/lib/web/frontend/static/websockify/run
 PASSWORD=
 HTTP_PASSWORD=
 
-exec /usr/sbin/sshd -D &
 exec /bin/tini -- /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
