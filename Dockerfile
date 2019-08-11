@@ -19,9 +19,8 @@ RUN 	apt-get install -y --no-install-recommends -qq software-properties-common l
 	&&	sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list' \
 	&&	rm -f microsoft.gpg \
 	&&	apt-get update -qq
-RUN 	apt-get install -y -qq apt-fast \
-	&&	apt-fast install -y --no-install-recommends -qq \
-			nano bash-completion wget code lxtask openssh-server git xdotool filezilla putty dnsutils \
+RUN 	apt-get install -y --no-install-recommends -qq \
+			nano bash-completion wget code lxtask openssh-server git xdotool filezilla putty dnsutils apt-fast \
 			ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
 	&&	apt-get clean
 
