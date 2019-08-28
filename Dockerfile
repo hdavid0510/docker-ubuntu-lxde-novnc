@@ -25,9 +25,9 @@ RUN 	apt-get install -y -qq apt-fast \
 			ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
 	&&	apt-get clean
 
-# Configure vscode extension
-RUN 	code --install-extension mhutchie.git-graph \
-	&&	code --install-extension eamodio.gitlens
+# Configure vscode extension --DISABLED: error on root
+#RUN 	code --install-extension mhutchie.git-graph \
+#	&&	code --install-extension eamodio.gitlens
 
 # Customizations : install opensnap (from code, since ppa not working)
 RUN mkdir -p /tmp/opensnap
