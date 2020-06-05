@@ -1,7 +1,8 @@
 # docker-ubuntu-lxde-novnc
 
-[![](https://images.microbadger.com/badges/version/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:latest)
-[![](https://images.microbadger.com/badges/image/hdavid0510/ubuntu-desktop-lxde-vnc.svg)](https://microbadger.com/images/hdavid0510/ubuntu-desktop-lxde-vnc:latest)  
+[![](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc) [![](https://img.shields.io/docker/cloud/build/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)]() [![](https://img.shields.io/github/issues/hdavid0510/docker-ubuntu-lxde-novnc?style=flat-square)](https://github.com/hdavid0510/docker-ubuntu-lxde-novnc/issues)  
+[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]()  
+[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]()  
 Customized noVNC LXDE ubuntu desktop docker on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
 
 ## Environment Variables
