@@ -1,1 +1,1 @@
-Dockerfile.amd64-bionic
+Dockerfile.amd64-focal
