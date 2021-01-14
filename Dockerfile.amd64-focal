@@ -12,7 +12,7 @@ RUN 	rm -rf /etc/apt/sources.list.d/fcwu-tw-ubuntu-apps-focal.list* \
 
 # Install required packages
 RUN 	apt-get install -y --no-install-recommends -qq software-properties-common locales \
-	&&	add-apt-repository -y ppa:noobslab/icons \
+	&&	add-apt-repository -y ppa:papirus/papirus \
 	&&	add-apt-repository -y ppa:apt-fast/stable \
 	&&	curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
 	&&	install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ \
@@ -20,8 +20,9 @@ RUN 	apt-get install -y --no-install-recommends -qq software-properties-common l
 	&&	rm -f microsoft.gpg \
 	&&	apt-get update -qq
 RUN 	apt-get install -y --no-install-recommends -qq \
-			nano bash-completion wget code lxtask openssh-server git xdotool filezilla putty dnsutils apt-fast \
-			ultra-flat-icons fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
+#			lxtask xdotool lxappearance-obconf obconf\
+			nano bash-completion wget code openssh-server git  filezilla putty dnsutils apt-fast \
+			papirus-icon-theme fonts-noto-cjk fonts-noto-cjk-extra \
 	&&	apt-get clean
 
 # Configure vscode extension --DISABLED: error on root
@@ -31,6 +32,7 @@ RUN 	apt-get install -y --no-install-recommends -qq \
 # Customizations : remove unused, change settings, copy conf files
 RUN rm /usr/local/share/doro-lxde-wallpapers/bg[2-4].jpg \
 	&&	sed -i "s/UI.initSetting('resize', 'off');/UI.initSetting('resize', 'scale');/g" /usr/local/lib/web/frontend/static/novnc/app/ui.js
+
 COPY files /
 
 # SSHD run bugfix
