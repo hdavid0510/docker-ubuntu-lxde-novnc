@@ -1,7 +1,8 @@
-# ubuntu-desktop-lxde-vnc
+# docker-ubuntu-lxde-novnc
 
-[![](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc) [![](https://img.shields.io/docker/cloud/build/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)]() [![](https://img.shields.io/github/issues/hdavid0510/docker-ubuntu-lxde-novnc?style=flat-square)](https://github.com/hdavid0510/docker-ubuntu-lxde-novnc/issues)   
+[![](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc) [![](https://img.shields.io/docker/cloud/build/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)]() [![](https://img.shields.io/github/issues/hdavid0510/docker-ubuntu-lxde-novnc?style=flat-square)](https://github.com/hdavid0510/docker-ubuntu-lxde-novnc/issues)  
 Customized LXDE ubuntu desktop environment on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
+
 
 ---
 ## Tags
@@ -9,6 +10,7 @@ Customized LXDE ubuntu desktop environment on top of [dorowu/ubuntu-desktop-lxde
 ### latest
 [![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]()  
 Built from `master` branch
+
 ### dev
 [![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]()  
 Built from `develop` branch
@@ -20,6 +22,7 @@ Customization based on [dorowu/ubuntu-desktop-lxde-vnc:bionic](https://hub.docke
 ### amd64-focal  
 [![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)]()  
 Customization based on [dorowu/ubuntu-desktop-lxde-vnc:focal](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)(Ubuntu 20.04)
+
 
 ---
 ## Environment Variables
@@ -40,10 +43,10 @@ Faster container initialization by skipping `chown`-ing every files and director
 * **DEFAULT** `root`
 
 ### `PASSWORD`
-* Password of the user(`USERNAME`). This may required if you want to use SSH without key, or apt-ing without `root` account.
+* Password of the user inside the container. This may required if you want to use SSH with password authentication, or normal user rather than `root`.
 
 ### `HTTP_PASSWORD`
-* Password for authentication before loading noVNC screen. `$USERNAME` is used as username. Password may be sent without any protection - use other authentication method when possible if this container is planned to be run as worldwide-public.
+* Password for authentication before loading noVNC screen. `USERNAME` is used as username. Password may be sent without any protection - use other authentication method when possible if this container is planned to be run as worldwide-public.
 
 ### `VNC_PASSWORD`
 * Authentication method provided by noVNC. Password longer than 8 characters will be truncated to 8 characters.
