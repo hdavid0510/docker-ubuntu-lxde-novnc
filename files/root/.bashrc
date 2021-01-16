@@ -126,4 +126,4 @@ EB_START_LINE=130
 alias eb="nano +$EB_START_LINE ~/.bashrc ; source ~/.bashrc; echo '.bashrc updated and applied!'"
 alias vb="vi +$EB_START_LINE ~/.bashrc ; source ~/.bashrc; echo '.bashrc updated and applied!'"
 alias CAPS="xdotool key Caps_Lock"
-alias au="sudo apt update ; sudo apt upgrade -y ; sudo apt autoremove -y; sudo apt clean;"
+alias au="sudo apt update ; sudo apt upgrade -y ; sudo apt autoremove -y; sudo apt clean"
