@@ -1,5 +1,4 @@
 pipeline{
-
 	agent any
 
 	environment {
@@ -50,5 +49,4 @@ pipeline{
 			sh "docker rmi $REGISTRY:$IMG_AMD64_FOCAL_TAG"
 		}
 	}
-
 }
