@@ -8,10 +8,10 @@ pipeline{
 		IMG_LATEST_TAG="latest"
 // 		IMG_VERSION=''
 // 		IMG_VERSION_TAG="$BUILD_NUMBER"
-		IMG_AMD64_BIONIC=''
-		IMG_AMD64_BIONIC_TAG="bionic"
-		IMG_AMD64_FOCAL=''
-		IMG_AMD64_FOCAL_TAG="focal"
+// 		IMG_AMD64_BIONIC=''
+// 		IMG_AMD64_BIONIC_TAG="amd64-bionic"
+// 		IMG_AMD64_FOCAL=''
+// 		IMG_AMD64_FOCAL_TAG="amd64-focal"
 	}
 
 	stages {
@@ -19,10 +19,7 @@ pipeline{
 		stage('Build') {
 			steps {
 				script {
-					IMG_LATEST		= docker.build REGISTRY + ":$IMG_LATEST_TAG"
-// 					IMG_VERSION		= docker.build REGISTRY + ":$IMG_VERSION_TAG"
-					IMG_AMD64_BIONIC= docker.build REGISTRY + ":$IMG_AMD64_BIONIC_TAG"
-					IMG_AMD64_FOCAL	= docker.build REGISTRY + ":$IMG_AMD64_FOCAL_TAG"
+					IMG_LATEST= docker.build REGISTRY + ":$IMG_LATEST_TAG"
 				}
 			}
 		}
@@ -32,9 +29,6 @@ pipeline{
 				script {
 					docker.withRegistry('', REGISTRY_CREDENTIALS){
 						IMG_LATEST.push()
-// 						IMG_VERSION.push()
-						IMG_AMD64_BIONIC.push()
-						IMG_AMD64_FOCAL.push()
 					}
 				}
 			}
