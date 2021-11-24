@@ -39,8 +39,8 @@ pipeline{
 		always {
 			sh "docker rmi $REGISTRY:$IMG_LATEST_TAG"
 // 			sh "docker rmi $REGISTRY:$IMG_VERSION_TAG"
-			sh "docker rmi $REGISTRY:$IMG_AMD64_BIONIC_TAG"
-			sh "docker rmi $REGISTRY:$IMG_AMD64_FOCAL_TAG"
+// 			sh "docker rmi $REGISTRY:$IMG_AMD64_BIONIC_TAG"
+// 			sh "docker rmi $REGISTRY:$IMG_AMD64_FOCAL_TAG"
 		}
 	}
 }
