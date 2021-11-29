@@ -8,20 +8,18 @@ Customized LXDE ubuntu desktop environment on top of [dorowu/ubuntu-desktop-lxde
 ## Tags
 
 ### latest
-[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]()  
+[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc/tags) [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/latest?style=flat-square)]()  
 Built from `master` branch
 
-### dev
-[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/dev?style=flat-square)]()  
-Built from `develop` branch
-
 ### amd64-bionic  
-[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-bionic?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-bionic?style=flat-square)]()  
-Customization based on [dorowu/ubuntu-desktop-lxde-vnc:bionic](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)(Ubuntu 18.04)
+[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-bionic?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc/tags) [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-bionic?style=flat-square)]()  
+Customization based on [dorowu/ubuntu-desktop-lxde-vnc:bionic](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)(Ubuntu 18.04)  
+Built from `amd64-bionic` branch
 
 ### amd64-focal  
-[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)]() [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)]()  
-Customization based on [dorowu/ubuntu-desktop-lxde-vnc:focal](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)(Ubuntu 20.04)
+[![](https://img.shields.io/docker/v/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc/tags) [![](https://img.shields.io/docker/image-size/hdavid0510/ubuntu-desktop-lxde-vnc/amd64-focal?style=flat-square)]()  
+Customization based on [dorowu/ubuntu-desktop-lxde-vnc:focal](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)(Ubuntu 20.04)  
+Built from `amd64-focal` branch
 
 
 ---
