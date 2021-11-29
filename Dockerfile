@@ -20,8 +20,8 @@ RUN 	apt-get install -y --no-install-recommends -qq software-properties-common l
 	&&	rm -f microsoft.gpg \
 	&&	apt-get update -qq
 RUN 	apt-get install -y --no-install-recommends -qq \
-			nano bash-completion wget code lxtask openssh-server git xdotool filezilla putty dnsutils apt-fast \
-			papirus-icon-theme fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
+	nano bash-completion wget code lxtask openssh-server git xdotool filezilla putty dnsutils apt-fast \
+	papirus-icon-theme fonts-noto-cjk fonts-noto-cjk-extra obconf lxappearance-obconf \
 	&&	apt-get clean
 
 # Configure vscode extension --DISABLED: error on root
