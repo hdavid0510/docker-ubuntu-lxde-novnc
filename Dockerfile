@@ -1,4 +1,4 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
+FROM dorowu/ubuntu-desktop-lxde-vnc:focal
 LABEL maintainer="gdavid0510@gmail.com"
 
 # Upgrade installed packages

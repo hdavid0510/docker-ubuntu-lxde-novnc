@@ -4,7 +4,7 @@ pipeline{
 	environment {
 		IMAGE="hdavid0510/ubuntu-desktop-lxde-vnc"
 		REGISTRY_CREDENTIALS='dockerhub-credential'
-		IMAGE_TAG="amd64-bionic"
+		IMAGE_TAG="amd64-focal"
  		IMAGE_BUILDING=''
 	}
 
