@@ -1,6 +1,6 @@
 # docker-ubuntu-lxde-novnc
 
-[![](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc) [![](https://img.shields.io/docker/cloud/build/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)]() [![](https://img.shields.io/github/issues/hdavid0510/docker-ubuntu-lxde-novnc?style=flat-square)](https://github.com/hdavid0510/docker-ubuntu-lxde-novnc/issues)  
+[![](https://img.shields.io/docker/pulls/hdavid0510/ubuntu-desktop-lxde-vnc?style=flat-square)](https://hub.docker.com/r/hdavid0510/ubuntu-desktop-lxde-vnc) [![](https://img.shields.io/github/issues/hdavid0510/docker-ubuntu-lxde-novnc?style=flat-square)](https://github.com/hdavid0510/docker-ubuntu-lxde-novnc/issues)  
 Customized LXDE ubuntu desktop environment on top of [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc)
 
 
